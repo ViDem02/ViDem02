@@ -1,10 +1,6 @@
-# ViDem02
-
-
 Full‑stack developer with a deep interest in economics and autonomous systems. I enjoy building end‑to‑end solutions that blend software engineering, data analysis, and practical impact. I like contemporary art.
 
 
-## Tech Snapshot
 <p align="left">
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="32" alt="C++" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="32" alt="Python" />
