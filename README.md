@@ -1,7 +1,7 @@
 # ViDem02
 
 
-Full‑stack developer with a deep interest in economics and autonomous systems. I enjoy building end‑to‑end solutions that blend software engineering, data analysis, and practical impact.
+Full‑stack developer with a deep interest in economics and autonomous systems. I enjoy building end‑to‑end solutions that blend software engineering, data analysis, and practical impact. I like contemporary art.
 
 
 ## Tech Snapshot
