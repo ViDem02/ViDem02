@@ -2,6 +2,7 @@ Full‑stack developer with a deep interest in economics, autonomous systems, an
 
 
 <p align="left">
+	<img src="https://img.shields.io/badge/MATLAB-%230076A8?logo=mathworks&logoColor=white" height="22" alt="MATLAB" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="32" alt="C++" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="32" alt="C#" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="32" alt="Python" />
@@ -23,5 +24,4 @@ Full‑stack developer with a deep interest in economics, autonomous systems, an
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="32" alt="Arduino" /> 
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" height="32" alt="Raspberry Pi" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" height="32" alt="Socket.IO" />
-	<img src="https://img.shields.io/badge/MATLAB-%230076A8?logo=mathworks&logoColor=white" height="22" alt="MATLAB" />
 </p>
