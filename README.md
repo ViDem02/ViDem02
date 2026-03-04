@@ -1,4 +1,4 @@
-Full‑stack developer with a deep interest in economics and autonomous systems. I enjoy building end‑to‑end solutions that blend software engineering, data analysis, and practical impact. I like contemporary art.
+Full‑stack developer with a deep interest in economics, autonomous systems, and contemporary art.
 
 
 <p align="left">
