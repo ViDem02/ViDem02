@@ -1,4 +1,4 @@
-Mechatronics engineer (and contemporary arts enthusiast) with experience on the following languages/frameworks:
+Mechatronics engineer (and contemporary arts enthusiast) with experience on the following languages/frameworks/platforms:
 
 
 <p align="left">
