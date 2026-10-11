@@ -1,4 +1,4 @@
-Full‑stack developer with a deep interest in economics, autonomous systems, and contemporary art.
+Mechatronics engineer (and contemporary arts enthusiast) with experience on the following languages/frameworks:
 
 
 <p align="left">
