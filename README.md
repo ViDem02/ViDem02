@@ -1,27 +1,21 @@
-Mechatronics engineer (and contemporary arts enthusiast) with experience on the following languages/frameworks/platforms:
+Victor De Matteis
+Robotics · Control · Scientific Computing · Software Engineering
+I'm an MSc student in Autonomous Systems and Intelligent Robots with EIT Digital, studying at the University of Trento and EURECOM (Sophia Antipolis, France).
+I work at the intersection of mathematical modelling, autonomous systems, and software development. I enjoy turning physical problems into models and algorithms, building tools around them, and testing how well the results hold up against constraints and measurements.
+Selected projects
+Project	What I built and investigated
+MCAV — Quadrotor flight control	Geometric control on SO(3) in MuJoCo, LMI-based gain design, symbolic Lyapunov analysis, and Monte Carlo simulations.
+PerceptionPipeline — Driverless racing	C++ LiDAR perception, cone and track-boundary detection, racing-line optimisation, ICP odometry, and quantitative validation against synthetic ground truth.
+CONCAST — Industrial energy optimisation	Modelled production processes and electricity demand; explored schedule optimisation using LSQR and coordinate descent, with simulation and refrigeration-control tools in a Django/React application.
+DataGatherer — Image-to-data workflows	Full-stack platform for assisted data extraction, OCR, image management, job processing, and structured user–hashtag exports.
+Project Levante — Embedded sensing	Two-week summer-school prototype combining STM32-based water sensing, exploratory data analysis, and edge-AI experimentation.
 
 
-<p align="left">
-	<img src="https://img.shields.io/badge/MATLAB-%230076A8?logo=mathworks&logoColor=white" height="22" alt="MATLAB" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="32" alt="C++" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="32" alt="C#" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="32" alt="Python" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" height="32" alt="R" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="32" alt="Java" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="32" alt="JavaScript" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="32" alt="Node.js" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" height="32" alt="CMake" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="32" alt="Qt" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="32" alt="React" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="32" alt="Django" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="32" alt="Docker" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="32" alt="Nginx" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="32" alt="PostgreSQL" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="32" alt="MongoDB" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="32" alt="Redux" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chartjs/chartjs-original.svg" height="32" alt="Chart.js" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" height="32" alt="LaTeX" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="32" alt="Arduino" /> 
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" height="32" alt="Raspberry Pi" />
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" height="32" alt="Socket.IO" />
-</p>
+Tools and methods
+- Programming: Python, C++, MATLAB/Simulink, JavaScript, C#
+- Robotics and numerics: MuJoCo, PCL, Eigen, SciPy, SymPy, CVXPY, NLopt, Qt
+- Software and data: Django, React, PostgreSQL, Docker, Git, CMake
+- Embedded systems: STM32, Arduino, Raspberry Pi
+Current interests: nonlinear control, trajectory optimisation, robot perception, simulation, and reliable software for physical systems.
+I value clear assumptions, reproducible experiments, and honest reporting of limitations as much as working implementations.
+LinkedIn · GitHub
