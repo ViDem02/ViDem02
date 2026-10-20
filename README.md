@@ -1,4 +1,4 @@
-# Victor De Matteis
+# Victor Gabriele De Matteis
 
 **Robotics · Control · Scientific Computing · Software Engineering**
 
