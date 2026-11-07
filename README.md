@@ -1,30 +1,55 @@
 # Victor Gabriele De Matteis
 
-**Robotics · Control · Scientific Computing · Software Engineering**
+### Building intelligent software for real-world problems.
 
-I'm an MSc student in **Autonomous Systems and Intelligent Robots** with [EIT Digital](https://masterschool.eitdigital.eu/), studying at the **University of Trento** and **EURECOM** (Sophia Antipolis, France).
+**Robotics · Applied AI · Industrial software**
 
-I work at the intersection of mathematical modelling, autonomous systems, and software development. I enjoy turning physical problems into models and algorithms, building tools around them, and testing how well the results hold up against constraints and measurements.
+I'm an MSc student in **Autonomous Systems and Intelligent Robots** with [EIT Digital](https://masterschool.eitdigital.eu/), studying at **EURECOM** in France after my first year at the **University of Trento** in Italy.
 
-## Selected projects
+I enjoy working across disciplines: turning complex ideas into useful software, testing them against real constraints, and making technology easier to understand and use.
 
-| Project | What I built and investigated |
-| --- | --- |
-| **[MCAV — Quadrotor flight control](https://github.com/ViDem02/MCAV)** | Geometric control on SO(3) in MuJoCo, LMI-based gain design, symbolic Lyapunov analysis, and Monte Carlo simulations. |
-| **[PerceptionPipeline — Driverless racing](https://github.com/ViDem02/PerceptionPipeline)** | C++ LiDAR perception, cone and track-boundary detection, racing-line optimisation, ICP odometry, and quantitative validation against synthetic ground truth. |
-| **[CONCAST — Industrial energy optimisation](https://github.com/ViDem02/CONCAST-optimisation)** | Modelled production processes and electricity demand; explored schedule optimisation using LSQR and coordinate descent, with simulation and refrigeration-control tools in a Django/React application. |
-| **[DataGatherer — Image-to-data workflows](https://github.com/ViDem02/DataGatherer)** | Full-stack platform for assisted data extraction, OCR, image management, job processing, and structured user–hashtag exports. |
-| **[Project Levante — Embedded sensing](https://github.com/ViDem02/ISEN-Summerschool-Public)** | Two-week summer-school prototype combining STM32-based water sensing, exploratory data analysis, and edge-AI experimentation. |
+## Selected work
 
-## Tools and methods
+### [Secure Offline Translator](https://github.com/ViDem02/SecureOfflineTranslator) — Built to translate. Not to transmit.
 
-- **Programming:** Python, C++, MATLAB/Simulink, JavaScript, C#
-- **Robotics and numerics:** MuJoCo, PCL, Eigen, SciPy, SymPy, CVXPY, NLopt, Qt
-- **Software and data:** Django, React, PostgreSQL, Docker, Git, CMake
-- **Embedded systems:** STM32, Arduino, Raspberry Pi
+A native macOS app for AI-powered technical translation, designed to keep sensitive text **on the user's computer** rather than sending it to a cloud service.
 
-**Current interests:** nonlinear control, trajectory optimisation, robot perception, simulation, and reliable software for physical systems.
+It runs its language model locally, checks model integrity, and uses a macOS App Sandbox configuration **without network entitlements**. The interface also shows whether the required sandbox is active. It's an exploration of a simple question: *Can modern AI be useful without giving it unrestricted access to your data?*
 
-I value **clear assumptions, reproducible experiments, and honest reporting of limitations** as much as working implementations.
+<a href="https://github.com/ViDem02/SecureOfflineTranslator">
+  <img src="https://raw.githubusercontent.com/ViDem02/SecureOfflineTranslator/main/Screenshot.png" alt="Secure Offline Translator — native macOS application" width="760" />
+</a>
 
-[LinkedIn](https://www.linkedin.com/in/vidmtt02/) · [GitHub](https://github.com/ViDem02)
+<sub>C++20 · Qt 6 · llama.cpp · Apple Metal · macOS App Sandbox</sub>
+
+### [PerceptionPipeline](https://github.com/ViDem02/PerceptionPipeline) — Helping a race car understand its surroundings.
+
+A C++ perception pipeline for driverless racing: processing LiDAR data, identifying track cones, estimating motion, and generating a path the car can follow.
+
+<sub>Robotics · Computer vision · C++ · LiDAR</sub>
+
+### [MCAV](https://github.com/ViDem02/MCAV) — Making autonomous flight more reliable.
+
+Designed and simulated quadrotor control strategies, then challenged them in MuJoCo to study stability, constraints, and robustness under changing conditions.
+
+<sub>Autonomous systems · Control theory · Python · MuJoCo</sub>
+
+### [CONCAST Optimisation](https://github.com/ViDem02/CONCAST-optimisation) — Smarter decisions for industrial energy use.
+
+Explored how industrial processes and energy demand can be modelled and scheduled more efficiently, combining numerical optimisation with simulation and web-based tools.
+
+<sub>Industrial optimisation · Python · Data analysis · Django / React</sub>
+
+**Also:** [DataGatherer](https://github.com/ViDem02/DataGatherer) — a full-stack tool that turns images and documents into structured, usable data.
+
+## What I work with
+
+**Software:** Python, C++, MATLAB/Simulink, Qt, Django, React, Docker  
+**Engineering:** Robotics, control, optimisation, simulation, computer vision  
+**Applied AI:** On-device inference, machine learning, data processing
+
+I care about the entire journey from **idea → implementation → validation** — not just whether something runs, but whether it works reliably and solves a meaningful problem.
+
+---
+
+[**LinkedIn**](https://www.linkedin.com/in/vidmtt02/) · [**Explore all repositories**](https://github.com/ViDem02?tab=repositories)
