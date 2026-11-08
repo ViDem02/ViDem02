@@ -24,13 +24,21 @@ It runs its language model locally, checks model integrity, and uses a macOS App
 
 ### [PerceptionPipeline](https://github.com/ViDem02/PerceptionPipeline) — Helping a race car understand its surroundings.
 
-A C++ perception pipeline for driverless racing: processing LiDAR data, identifying track cones, estimating motion, and generating a path the car can follow.
+A C++ perception system for driverless racing. It turns LiDAR data into an understanding of the track, estimates vehicle motion, and helps plan where the car should go next.
+
+<a href="https://github.com/ViDem02/PerceptionPipeline">
+  <img src="https://raw.githubusercontent.com/ViDem02/PerceptionPipeline/reviewed/Screenshot.png" alt="PerceptionPipeline project screenshot" width="760" />
+</a>
 
 <sub>Robotics · Computer vision · C++ · LiDAR</sub>
 
 ### [MCAV](https://github.com/ViDem02/MCAV) — Making autonomous flight more reliable.
 
-Designed and simulated quadrotor control strategies, then challenged them in MuJoCo to study stability, constraints, and robustness under changing conditions.
+Designed and tested control strategies for an autonomous quadrotor, exploring how a flying robot can remain stable and respect constraints when conditions change.
+
+<a href="https://github.com/ViDem02/MCAV">
+  <img src="https://raw.githubusercontent.com/ViDem02/MCAV/reviewed/Screenshot.png" alt="MCAV quadrotor simulation project screenshot" width="760" />
+</a>
 
 <sub>Autonomous systems · Control theory · Python · MuJoCo</sub>
 
