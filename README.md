@@ -46,6 +46,16 @@ Designed and tested control strategies for an autonomous quadrotor, exploring ho
 
 Explored how industrial processes and energy demand can be modelled and scheduled more efficiently, combining numerical optimisation with simulation and web-based tools.
 
+<a href="https://github.com/ViDem02/CONCAST-optimisation">
+  <img src="https://raw.githubusercontent.com/ViDem02/CONCAST-optimisation/reviewed/docs/sparc-day.svg" alt="CONCAST Optimisation — daily schedule" width="760" />
+</a>
+
+<a href="https://github.com/ViDem02/concast-dashboard-main">
+  <img src="https://raw.githubusercontent.com/ViDem02/concast-dashboard-main/main/docs/assets/milp-preview.svg" alt="CONCAST dashboard — MILP scheduling preview" width="760" />
+</a>
+
+**Repositories:** [CONCAST-optimisation](https://github.com/ViDem02/CONCAST-optimisation) (optimisation and simulation) · [concast-dashboard-main](https://github.com/ViDem02/concast-dashboard-main) (web dashboard)
+
 <sub>Industrial optimisation · Python · Data analysis · Django / React</sub>
 
 **Also:** [DataGatherer](https://github.com/ViDem02/DataGatherer) — a full-stack tool that turns images and documents into structured, usable data.
