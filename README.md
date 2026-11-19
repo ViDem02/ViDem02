@@ -1,5 +1,7 @@
 <img src="assets/profile-card.svg" alt="Victor Gabriele De Matteis" width="100%">
 
+Evidemment il faut s'amuser d'en temps en temps
+
 ### Building intelligent software for real-world problems.
 
 **Robotics · Applied AI · Industrial software**
