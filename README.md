@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/profile-card.svg" alt="Victor Gabriele De Matteis — Robotics · Applied AI · Industrial software" width="760">
-</p>
+<img src="assets/profile-card.svg" alt="Victor Gabriele De Matteis" width="100%">
 
 ### Building intelligent software for real-world problems.
 
