@@ -10,34 +10,12 @@ I enjoy working across disciplines: turning complex ideas into useful software, 
 
 ## Selected work
 
-### [Secure Offline Translator](https://github.com/ViDem02/SecureOfflineTranslator) — Built to translate. Not to transmit.
-
-A native macOS app for AI-powered technical translation, designed to keep sensitive text **on the user's computer** rather than sending it to a cloud service.
-
-It runs its language model locally, checks model integrity, and uses a macOS App Sandbox configuration **without network entitlements**. The interface also shows whether the required sandbox is active. It's an exploration of a simple question: *Can modern AI be useful without giving it unrestricted access to your data?*
-
-<a href="https://github.com/ViDem02/SecureOfflineTranslator">
-  <img src="https://raw.githubusercontent.com/ViDem02/SecureOfflineTranslator/main/Screenshot.png" alt="Secure Offline Translator — native macOS application" width="760" />
-</a>
-
-<sub>C++20 · Qt 6 · llama.cpp · Apple Metal · macOS App Sandbox</sub>
-
-### [PerceptionPipeline](https://github.com/ViDem02/PerceptionPipeline) — Helping a race car understand its surroundings.
-
-A C++ perception system for driverless racing. It turns LiDAR data into an understanding of the track, estimates vehicle motion, and helps plan where the car should go next.
-
-<a href="https://github.com/ViDem02/PerceptionPipeline">
-  <img src="https://raw.githubusercontent.com/ViDem02/PerceptionPipeline/reviewed/Screenshot.png" alt="PerceptionPipeline project screenshot" width="760" />
-</a>
-
-<sub>Robotics · Computer vision · C++ · LiDAR</sub>
-
 ### [MCAV](https://github.com/ViDem02/MCAV) — Making autonomous flight more reliable.
 
 Designed and tested control strategies for an autonomous quadrotor, exploring how a flying robot can remain stable and respect constraints when conditions change.
 
 <a href="https://github.com/ViDem02/MCAV">
-  <img src="https://raw.githubusercontent.com/ViDem02/MCAV/reviewed/Screenshot.png" alt="MCAV quadrotor simulation project screenshot" width="760" />
+  <img src="assets/mcav.svg" alt="MCAV — a quadrotor climbs onto an elevated circular reference and keeps orbiting while its tracking error decays" width="760" />
 </a>
 
 <sub>Autonomous systems · Control theory · Python · MuJoCo</sub>
@@ -51,6 +29,16 @@ State-feedback and observer design for two water tanks in cascade, using Linear 
 </a>
 
 <sub>Convex optimisation · State observers · MATLAB · YALMIP · MOSEK</sub>
+
+### [PerceptionPipeline](https://github.com/ViDem02/PerceptionPipeline) — Helping a race car understand its surroundings.
+
+A C++ perception system for driverless racing. It turns LiDAR data into an understanding of the track, estimates vehicle motion, and helps plan where the car should go next.
+
+<a href="https://github.com/ViDem02/PerceptionPipeline">
+  <img src="https://raw.githubusercontent.com/ViDem02/PerceptionPipeline/reviewed/Screenshot.png" alt="PerceptionPipeline project screenshot" width="760" />
+</a>
+
+<sub>Robotics · Computer vision · C++ · LiDAR</sub>
 
 ### [CONCAST Optimisation](https://github.com/ViDem02/CONCAST-optimisation) — Smarter decisions for industrial energy use.
 
@@ -67,6 +55,18 @@ Explored how industrial processes and energy demand can be modelled and schedule
 **Repositories:** [CONCAST-optimisation](https://github.com/ViDem02/CONCAST-optimisation) (optimisation and simulation) · [concast-dashboard-main](https://github.com/ViDem02/concast-dashboard-main) (web dashboard)
 
 <sub>Industrial optimisation · Python · Data analysis · Django / React</sub>
+
+### [Secure Offline Translator](https://github.com/ViDem02/SecureOfflineTranslator) — Built to translate. Not to transmit.
+
+A native macOS app for AI-powered technical translation, designed to keep sensitive text **on the user's computer** rather than sending it to a cloud service.
+
+It runs its language model locally, checks model integrity, and uses a macOS App Sandbox configuration **without network entitlements**. The interface also shows whether the required sandbox is active. It's an exploration of a simple question: *Can modern AI be useful without giving it unrestricted access to your data?*
+
+<a href="https://github.com/ViDem02/SecureOfflineTranslator">
+  <img src="https://raw.githubusercontent.com/ViDem02/SecureOfflineTranslator/main/Screenshot.png" alt="Secure Offline Translator — native macOS application" width="760" />
+</a>
+
+<sub>C++20 · Qt 6 · llama.cpp · Apple Metal · macOS App Sandbox</sub>
 
 ### [DataGatherer](https://github.com/ViDem02/DataGatherer) — Screenshots in. Structured data out.
 
