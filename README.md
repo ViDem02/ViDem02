@@ -35,7 +35,7 @@ State-feedback and observer design for two water tanks in cascade, using Linear 
 A C++ perception system for driverless racing. It turns LiDAR data into an understanding of the track, estimates vehicle motion, and helps plan where the car should go next.
 
 <a href="https://github.com/ViDem02/PerceptionPipeline">
-  <img src="https://raw.githubusercontent.com/ViDem02/PerceptionPipeline/reviewed/Screenshot.png" alt="PerceptionPipeline project screenshot" width="760" />
+  <img src="assets/perception-pipeline.svg" alt="PerceptionPipeline — cones inside the LiDAR range are detected and the planned path is drawn ahead of the car" width="760" />
 </a>
 
 <sub>Robotics · Computer vision · C++ · LiDAR</sub>
@@ -63,7 +63,7 @@ A native macOS app for AI-powered technical translation, designed to keep sensit
 It runs its language model locally, checks model integrity, and uses a macOS App Sandbox configuration **without network entitlements**. The interface also shows whether the required sandbox is active. It's an exploration of a simple question: *Can modern AI be useful without giving it unrestricted access to your data?*
 
 <a href="https://github.com/ViDem02/SecureOfflineTranslator">
-  <img src="https://raw.githubusercontent.com/ViDem02/SecureOfflineTranslator/main/Screenshot.png" alt="Secure Offline Translator — native macOS application" width="760" />
+  <img src="assets/secure-offline-translator.svg" alt="Secure Offline Translator — text is translated by an on-device model while a network request is blocked" width="760" />
 </a>
 
 <sub>C++20 · Qt 6 · llama.cpp · Apple Metal · macOS App Sandbox</sub>
