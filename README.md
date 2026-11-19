@@ -42,6 +42,16 @@ Designed and tested control strategies for an autonomous quadrotor, exploring ho
 
 <sub>Autonomous systems · Control theory · Python · MuJoCo</sub>
 
+### [Two-Tank LMI Control](https://github.com/ViDem02/LMI_PROJECT) — Speeding up a slow process without asking the impossible of its valves.
+
+State-feedback and observer design for two water tanks in cascade, using Linear Matrix Inequalities. The chosen controller settles about **7× faster** than the open loop while every valve command stays between fully shut and fully open, and an observer rebuilds the level of tank 1 when its sensor fails.
+
+<a href="https://github.com/ViDem02/LMI_PROJECT">
+  <img src="https://raw.githubusercontent.com/ViDem02/LMI_PROJECT/main/assets/tanks.svg" alt="Two-tank cascade — both levels converge to the setpoint while an observer reconstructs the level of tank 1" width="760" />
+</a>
+
+<sub>Convex optimisation · State observers · MATLAB · YALMIP · MOSEK</sub>
+
 ### [CONCAST Optimisation](https://github.com/ViDem02/CONCAST-optimisation) — Smarter decisions for industrial energy use.
 
 Explored how industrial processes and energy demand can be modelled and scheduled more efficiently, combining numerical optimisation with simulation and web-based tools.
@@ -58,7 +68,15 @@ Explored how industrial processes and energy demand can be modelled and schedule
 
 <sub>Industrial optimisation · Python · Data analysis · Django / React</sub>
 
-**Also:** [DataGatherer](https://github.com/ViDem02/DataGatherer) — a full-stack tool that turns images and documents into structured, usable data.
+### [DataGatherer](https://github.com/ViDem02/DataGatherer) — Screenshots in. Structured data out.
+
+A full-stack tool that turns collections of post screenshots into a user × hashtag dataset: crop once, let OCR read, confirm, export.
+
+<a href="https://github.com/ViDem02/DataGatherer">
+  <img src="assets/datagatherer.svg" alt="DataGatherer — screenshots flowing through crop and OCR into a user × hashtag matrix" width="760" />
+</a>
+
+<sub>Django · React · Tesseract OCR · PostgreSQL · Docker</sub>
 
 ## What I work with
 
