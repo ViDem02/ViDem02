@@ -1,17 +1,5 @@
 <img src="assets/profile-card.svg" alt="Victor Gabriele De Matteis" width="100%">
 
-> [!CAUTION]
-> Franchement il faut s’amuser de temps en temps avec Claude, on va utiliser bien l'IA 🥑 
-
-### Building intelligent software for real-world problems.
-
-**Robotics · Applied AI · Industrial software**
-
-I'm an MSc student in **Autonomous Systems and Intelligent Robots** with [EIT Digital](https://masterschool.eitdigital.eu/), studying at **EURECOM** in France after my first year at the **University of Trento** in Italy.
-
-I enjoy working across disciplines: turning complex ideas into useful software, testing them against real constraints, and making technology easier to understand and use.
-
-## Selected work
 
 ### [MCAV](https://github.com/ViDem02/MCAV) — Making autonomous flight more reliable.
 
