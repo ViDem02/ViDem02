@@ -1,89 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="t">
   <title id="t">Victor Gabriele De Matteis</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#397b9b"/>
       <stop offset="1" stop-color="#549ec0"/>
     </linearGradient>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.45"/>
-    </linearGradient>
-    <clipPath id="radar"><circle cx="820" cy="130" r="100"/></clipPath>
+    <clipPath id="att"><rect x="924" y="76" width="160" height="224"/></clipPath>
+    <clipPath id="spd"><rect x="872" y="76" width="46" height="224"/></clipPath>
+    <clipPath id="alt"><rect x="1090" y="76" width="46" height="224"/></clipPath>
+    <clipPath id="hdg"><rect x="924" y="314" width="160" height="50"/></clipPath>
   </defs>
-
   <style>
-    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; fill: #ffffff; }
-    .step { font-size: 13px; letter-spacing: 1.6px; }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes blip { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
-    @keyframes dash { to { stroke-dashoffset: -24; } }
-    @keyframes lit  { 0%, 28% { fill-opacity: 0.28; } 34%, 100% { fill-opacity: 0; } }
-
-    .sweep { transform-origin: 820px 130px; animation: spin 5s linear infinite; }
-    .b1 { animation: blip 2.5s ease-in-out infinite; }
-    .b2 { animation: blip 2.5s ease-in-out 0.8s infinite; }
-    .b3 { animation: blip 2.5s ease-in-out 1.6s infinite; }
-    .flow { animation: dash 1s linear infinite; }
-    .lit { fill: #ffffff; fill-opacity: 0; animation: lit 3.6s linear infinite; }
-    .l2 { animation-delay: 1.2s; }
-    .l3 { animation-delay: 2.4s; }
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .step { font-size: 15px; letter-spacing: 1.8px; }
+    .num { font-size: 11px; font-weight: 600; fill-opacity: 0.9; }
   </style>
 
-  <rect width="960" height="260" fill="url(#bg)"/>
+  <rect width="1200" height="440" fill="url(#bg)"/>
 
   <!-- name -->
-  <text x="51" y="96" font-size="47">VICTOR GABRIELE</text>
-  <text x="51" y="143" font-size="47">DE MATTEIS</text>
+  <text x="56" y="162" font-size="76">VICTOR GABRIELE</text>
+  <text x="56" y="244" font-size="76">DE MATTEIS</text>
 
-  <!-- study → implement → verify -->
-  <g transform="translate(0,180)">
-    <path d="M147 17 H195 M331 17 H379" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="6 6" class="flow"/>
-    <path d="M189 11 L196 17 L189 23 M373 11 L380 17 L373 23" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <!-- study -> implement -> verify -->
+  <path d="M176 313.0 H230 M398 313.0 H452" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M223 306.0 L231 313.0 L223 320.0 M445 306.0 L453 313.0 L445 320.0" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="56" y="292" width="120" height="42" fill="#ffffff" fill-opacity="0">
+      <animate attributeName="fill-opacity" values="0.28;0.28;0;0" keyTimes="0;0.28;0.34;1" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="56" y="292" width="120" height="42" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="116.0" y="319" text-anchor="middle" class="step">STUDY</text><rect x="234" y="292" width="164" height="42" fill="#ffffff" fill-opacity="0">
+      <animate attributeName="fill-opacity" values="0.28;0.28;0;0" keyTimes="0;0.28;0.34;1" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="234" y="292" width="164" height="42" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="316.0" y="319" text-anchor="middle" class="step">IMPLEMENT</text><rect x="456" y="292" width="128" height="42" fill="#ffffff" fill-opacity="0">
+      <animate attributeName="fill-opacity" values="0.28;0.28;0;0" keyTimes="0;0.28;0.34;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="456" y="292" width="128" height="42" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="520.0" y="319" text-anchor="middle" class="step">VERIFY</text>
 
-    <rect x="51" width="96" height="34" class="lit"/>
-    <rect x="51" width="96" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
-    <text x="99" y="22" text-anchor="middle" class="step">STUDY</text>
+  <!-- primary flight display -->
+  <rect x="864" y="60" width="280" height="318" fill="#0b2c44" fill-opacity="0.22" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.4"/>
 
-    <rect x="199" width="132" height="34" class="lit l2"/>
-    <rect x="199" width="132" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
-    <text x="265" y="22" text-anchor="middle" class="step">IMPLEMENT</text>
+  <g clip-path="url(#att)">
+    <rect x="924" y="76" width="160" height="224" fill="#ffffff" fill-opacity="0.06"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-9 1004 188;7 1004 188;-3 1004 188;11 1004 188;-9 1004 188" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="11s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 -10;0 14;0 2;0 -18;0 -10" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="8s" repeatCount="indefinite" additive="sum"/>
+      <rect x="704" y="188" width="600" height="400" fill="#0b2c44" fill-opacity="0.6"/>
+      <path d="M704 188 H1304" stroke="#ffffff" stroke-width="2"/>
+      <path d="M988 278.0 H1020" stroke="#ffffff" stroke-width="1.6"/><path d="M970 260.0 H1038" stroke="#ffffff" stroke-width="1.6"/><text x="964" y="264.0" text-anchor="end" class="num">20</text><text x="1044" y="264.0" text-anchor="start" class="num">20</text><path d="M988 242.0 H1020" stroke="#ffffff" stroke-width="1.6"/><path d="M970 224.0 H1038" stroke="#ffffff" stroke-width="1.6"/><text x="964" y="228.0" text-anchor="end" class="num">10</text><text x="1044" y="228.0" text-anchor="start" class="num">10</text><path d="M988 206.0 H1020" stroke="#ffffff" stroke-width="1.6"/><path d="M988 170.0 H1020" stroke="#ffffff" stroke-width="1.6"/><path d="M970 152.0 H1038" stroke="#ffffff" stroke-width="1.6"/><text x="964" y="156.0" text-anchor="end" class="num">10</text><text x="1044" y="156.0" text-anchor="start" class="num">10</text><path d="M988 134.0 H1020" stroke="#ffffff" stroke-width="1.6"/><path d="M970 116.0 H1038" stroke="#ffffff" stroke-width="1.6"/><text x="964" y="120.0" text-anchor="end" class="num">20</text><text x="1044" y="120.0" text-anchor="start" class="num">20</text>
+    </g>
+  </g>
+  <rect x="924" y="76" width="160" height="224" fill="none" stroke="#ffffff" stroke-opacity="0.35"/>
 
-    <rect x="383" width="104" height="34" class="lit l3"/>
-    <rect x="383" width="104" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
-    <text x="435" y="22" text-anchor="middle" class="step">VERIFY</text>
+  <!-- roll scale -->
+  <path d="M920.9 140.0 A96 96 0 0 1 1087.1 140.0" fill="none" stroke="#ffffff" stroke-width="1.4"/>
+  <path d="M920.9 140.0 L910.5 134.0 M936.1 120.1 L931.2 115.2 M956.0 104.9 L950.0 94.5 M971.2 97.8 L968.8 91.2 M987.3 93.5 L986.1 86.6 M1020.7 93.5 L1021.9 86.6 M1036.8 97.8 L1039.2 91.2 M1052.0 104.9 L1058.0 94.5 M1071.9 120.1 L1076.8 115.2 M1087.1 140.0 L1097.5 134.0" stroke="#ffffff" stroke-width="1.4"/>
+  <path d="M1004 91 l-6 -10 h12 Z" fill="#ffffff"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-9 1004 188;7 1004 188;-3 1004 188;11 1004 188;-9 1004 188" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="11s" repeatCount="indefinite" />
+    <path d="M1004 94 l-7 12 h14 Z" fill="#ffd84d"/>
   </g>
 
-  <!-- LiDAR radar -->
-  <circle cx="820" cy="130" r="100" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
-  <g clip-path="url(#radar)">
-    <circle cx="820" cy="130" r="66" fill="none" stroke="#ffffff" stroke-opacity="0.25"/>
-    <circle cx="820" cy="130" r="33" fill="none" stroke="#ffffff" stroke-opacity="0.25"/>
-    <path d="M720 130 H920 M820 30 V230" stroke="#ffffff" stroke-opacity="0.15"/>
-    <g class="sweep">
-      <path d="M820 130 L920 130 A100 100 0 0 0 890.7 59.3 Z" fill="url(#sweep)"/>
-      <path d="M820 130 L920 130" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9"/>
-    </g>
-    <!-- point cloud -->
-    <g fill="#ffffff" fill-opacity="0.5">
-      <circle cx="752.3" cy="97.8" r="1.4"/><circle cx="758.7" cy="157.4" r="1.4"/><circle cx="773.3" cy="67.1" r="1.4"/>
-      <circle cx="884.5" cy="170.3" r="1.4"/><circle cx="902.2" cy="118.7" r="1.4"/><circle cx="779.7" cy="196.1" r="1.4"/>
-      <circle cx="874.8" cy="196.1" r="1.4"/><circle cx="744.2" cy="138.1" r="1.4"/><circle cx="908.7" cy="152.6" r="1.4"/>
-      <circle cx="787.8" cy="44.6" r="1.4"/><circle cx="763.6" cy="183.2" r="1.4"/>
-    </g>
-    <!-- track cones: yellow left, blue right -->
-    <g fill="#ffd84d">
-      <circle cx="789.4" cy="207.4" r="3.6"/><circle cx="791.0" cy="175.1" r="3.6" class="b1"/><circle cx="795.8" cy="142.9" r="3.6"/>
-      <circle cx="805.5" cy="110.7" r="3.6" class="b2"/><circle cx="820" cy="80" r="3.6"/><circle cx="837.7" cy="54.2" r="3.6" class="b3"/>
-    </g>
-    <g fill="#0d2f47">
-      <circle cx="852.2" cy="207.4" r="3.6" class="b2"/><circle cx="850.6" cy="175.1" r="3.6"/><circle cx="853.9" cy="144.5" r="3.6" class="b3"/>
-      <circle cx="861.9" cy="115.5" r="3.6"/><circle cx="874.8" cy="89.7" r="3.6" class="b1"/><circle cx="892.5" cy="67.1" r="3.6"/>
-    </g>
-    <!-- planned path -->
-    <path d="M820.8 138.1 C 821.6 105.9, 834.5 83.3, 865.1 57.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 6" class="flow"/>
+  <!-- aircraft symbol -->
+  <g fill="#ffd84d" stroke="#0b2c44" stroke-width="1">
+    <path d="M942 185 H982 V199 H976 V191 H942 Z"/>
+    <path d="M1066 185 H1026 V199 H1032 V191 H1066 Z"/>
+    <rect x="1000" y="184" width="8" height="8"/>
   </g>
-  <!-- car -->
-  <path d="M820.8 120.6 L828.1 141.6 L820.8 137.6 L813.6 141.6 Z" fill="#ffffff"/>
+
+  <!-- speed tape -->
+  <rect x="872" y="76" width="46" height="224" fill="#0b2c44" fill-opacity="0.35"/>
+  <g clip-path="url(#spd)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 32;0 16;0 -16;0 0" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="10s" repeatCount="indefinite" /><path d="M910 348 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="352" text-anchor="end" class="num">60</text><path d="M910 328 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 308 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="312" text-anchor="end" class="num">80</text><path d="M910 288 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 268 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="272" text-anchor="end" class="num">100</text><path d="M910 248 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 228 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="232" text-anchor="end" class="num">120</text><path d="M910 208 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 188 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="192" text-anchor="end" class="num">140</text><path d="M910 168 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 148 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="152" text-anchor="end" class="num">160</text><path d="M910 128 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 108 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="112" text-anchor="end" class="num">180</text><path d="M910 88 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 68 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="72" text-anchor="end" class="num">200</text><path d="M910 48 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 28 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="32" text-anchor="end" class="num">220</text><path d="M910 8 H918" stroke="#ffffff" stroke-width="1.4"/><path d="M910 -12 H918" stroke="#ffffff" stroke-width="1.4"/><text x="906" y="-8" text-anchor="end" class="num">240</text></g></g>
+  <path d="M919 188 l7 -6 v12 Z" fill="#ffd84d"/>
+
+  <!-- altitude tape -->
+  <rect x="1090" y="76" width="46" height="224" fill="#0b2c44" fill-opacity="0.35"/>
+  <g clip-path="url(#alt)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 36;0 24;0 -12;0 0" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="9s" repeatCount="indefinite" /><path d="M1090 308 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="312" class="num">24</text><path d="M1090 288 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 268 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="272" class="num">26</text><path d="M1090 248 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 228 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="232" class="num">28</text><path d="M1090 208 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 188 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="192" class="num">30</text><path d="M1090 168 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 148 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="152" class="num">32</text><path d="M1090 128 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 108 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="112" class="num">34</text><path d="M1090 88 H1098" stroke="#ffffff" stroke-width="1.4"/><path d="M1090 68 H1098" stroke="#ffffff" stroke-width="1.4"/><text x="1102" y="72" class="num">36</text><path d="M1090 48 H1098" stroke="#ffffff" stroke-width="1.4"/></g></g>
+  <path d="M1089 188 l-7 -6 v12 Z" fill="#ffd84d"/>
+
+  <!-- heading tape -->
+  <rect x="924" y="314" width="160" height="50" fill="#0b2c44" fill-opacity="0.35"/>
+  <g clip-path="url(#hdg)"><g><animateTransform attributeName="transform" type="translate" values="19.2 0;-33.6 0;-14.4 0;38.4 0;19.2 0" keyTimes="0.0000;0.2500;0.5000;0.7500;1.0000" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1" dur="13s" repeatCount="indefinite" /><path d="M788.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="788.0" y="342" text-anchor="middle" class="num">W</text><path d="M800.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M812.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M824.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M836.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M848.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M860.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="860.0" y="342" text-anchor="middle" class="num">30</text><path d="M872.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M884.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M896.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M908.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M920.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M932.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="932.0" y="342" text-anchor="middle" class="num">33</text><path d="M944.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M956.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M968.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M980.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M992.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1004.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="1004.0" y="342" text-anchor="middle" class="num">N</text><path d="M1016.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1028.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1040.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1052.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1064.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1076.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="1076.0" y="342" text-anchor="middle" class="num">03</text><path d="M1088.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1100.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1112.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1124.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1136.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1148.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="1148.0" y="342" text-anchor="middle" class="num">06</text><path d="M1160.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1172.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1184.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1196.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><path d="M1208.0 314 V320" stroke="#ffffff" stroke-width="1.4"/><path d="M1220.0 314 V324" stroke="#ffffff" stroke-width="1.4"/><text x="1220.0" y="342" text-anchor="middle" class="num">E</text></g></g>
+  <path d="M1004 313 l-6 -8 h12 Z" fill="#ffd84d"/>
 </svg>
