@@ -1,6 +1,7 @@
 <img src="assets/profile-card.svg" alt="Victor Gabriele De Matteis" width="100%">
 
-Evidemment il faut s'amuser d'en temps en temps
+> [!CAUTION]
+> Franchement il faut s’amuser de temps en temps avec Claude, on va utiliser bien l'IA
 
 ### Building intelligent software for real-world problems.
 
