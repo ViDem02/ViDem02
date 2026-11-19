@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 64 820 426" width="820" height="426" role="img" aria-labelledby="t d">
+  <title id="t">Two-tank cascade under observer-based LMI control</title>
+  <desc id="d">Animated diagram: water is pumped into tank 1, flows through valve u2 into tank 2 and out through valve u3. Both levels rise to the 0.20 m setpoint. The h1 sensor has failed, so an observer estimate of h1 converges onto the true level.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1626"/>
+      <stop offset="1" stop-color="#14243d"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fd1ff"/>
+      <stop offset="1" stop-color="#1f5fd6"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0.25" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4fd1ff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#4fd1ff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="in1"><rect x="154" y="74" width="152" height="142" rx="4"/></clipPath>
+    <clipPath id="in2"><rect x="474" y="254" width="152" height="142" rx="4"/></clipPath>
+
+    <!-- one water body: wavy surface at y=0, body below -->
+    <g id="wave">
+      <path d="M-80 0 q20 -5 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 V200 H-80 Z" fill="url(#water)"/>
+      <path d="M-80 0 q20 -5 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#b8f0ff" stroke-width="1.6" stroke-opacity="0.9"/>
+    </g>
+    <g id="wave2">
+      <path d="M-80 3 q20 4 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 V200 H-80 Z" fill="#1a4fb8" fill-opacity="0.45"/>
+    </g>
+  </defs>
+
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #cfe3ff; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .title { font-size: 17px; font-weight: 700; fill: #ffffff; letter-spacing: .2px; }
+    .sub { font-size: 12px; fill: #8fb3e0; }
+    .lbl { font-size: 12px; font-weight: 600; fill: #9ec5f5; letter-spacing: 1.5px; }
+    .u { font-size: 14px; font-weight: 700; fill: #ffd166; }
+    .small { font-size: 11px; fill: #8fb3e0; }
+
+    .tank { fill: url(#glass); stroke: #7aa7e0; stroke-width: 3; }
+    .pipe { fill: none; stroke: #36507a; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+    .flow { fill: none; stroke: #4fd1ff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+            stroke-dasharray: 6 10; animation: flow 0.9s linear infinite; }
+    .stream { stroke: #4fd1ff; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 8 6;
+              animation: flow 0.5s linear infinite; opacity: .85; }
+    .valve { fill: #ffd166; stroke: #0b1626; stroke-width: 1.5; }
+    .setpt { stroke: #7cf29c; stroke-width: 1.6; stroke-dasharray: 5 5; }
+    .est { stroke: #ff9f43; stroke-width: 2.4; stroke-dasharray: 9 5; }
+
+    .slide { animation: slide 2.4s linear infinite; }
+    .slide2 { animation: slide 3.6s linear infinite reverse; }
+    .lvl1 { animation: lvl1 9s cubic-bezier(.45,.05,.35,1) infinite; }
+    .lvl2 { animation: lvl2 9s cubic-bezier(.45,.05,.35,1) infinite; }
+    .obs  { animation: obs 9s cubic-bezier(.45,.05,.35,1) infinite; }
+    .drip { animation: drip 1.8s ease-in infinite; }
+    .drip.b { animation-delay: .9s; }
+    .pulse { animation: pulse 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .blink { animation: blink 1.2s steps(2, start) infinite; }
+    .pump { animation: spin 1.4s linear infinite; transform-box: fill-box; transform-origin: center; }
+
+    @keyframes flow  { to { stroke-dashoffset: -32; } }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-80px); } }
+    /* tank 1 true level: starts 5 cm low, slight overshoot, settles on h̄ */
+    @keyframes lvl1 {
+      0%   { transform: translate(154px, 160px); }
+      45%  { transform: translate(154px, 125px); }
+      62%  { transform: translate(154px, 131px); }
+      86%  { transform: translate(154px, 131px); }
+      100% { transform: translate(154px, 160px); }
+    }
+    /* tank 2 true level: slower, no overshoot */
+    @keyframes lvl2 {
+      0%   { transform: translate(474px, 340px); }
+      70%  { transform: translate(474px, 311px); }
+      86%  { transform: translate(474px, 311px); }
+      100% { transform: translate(474px, 340px); }
+    }
+    /* observer estimate ĥ1: starts at h̄, dips, then locks onto the true level */
+    @keyframes obs {
+      0%   { transform: translateY(131px); }
+      8%   { transform: translateY(168px); }
+      30%  { transform: translateY(138px); }
+      45%  { transform: translateY(125px); }
+      62%  { transform: translateY(131px); }
+      100% { transform: translateY(131px); }
+    }
+    @keyframes drip {
+      0%   { transform: translateY(0); opacity: 0; }
+      15%  { opacity: 1; }
+      100% { transform: translateY(26px); opacity: 0; }
+    }
+    @keyframes pulse { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.6); opacity: .35; } }
+    @keyframes blink { to { visibility: hidden; } }
+    @keyframes spin  { to { transform: rotate(360deg); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .lvl1 { transform: translate(154px, 131px); }
+      .lvl2 { transform: translate(474px, 311px); }
+      .obs  { transform: translateY(131px); }
+    }
+  </style>
+
+  <!-- card -->
+  <rect x="0" y="64" width="820" height="426" rx="20" fill="url(#bg)"/>
+  <rect x="0.5" y="64.5" width="819" height="425" rx="20" fill="none" stroke="#2a4266"/>
+  <circle cx="230" cy="200" r="150" fill="url(#halo)"/>
+  <circle cx="550" cy="380" r="150" fill="url(#halo)"/>
+
+  <g transform="translate(0 50)">
+  <!-- ================= pipes ================= -->
+  <!-- pump → tank 1 (u1) -->
+  <path class="pipe" d="M70 104 H120 V48 H230 V82"/>
+  <path class="flow" d="M70 104 H120 V48 H230 V82"/>
+  <!-- tank 1 → tank 2 (u2) -->
+  <path class="pipe" d="M310 206 H550 V262"/>
+  <path class="flow" d="M310 206 H550 V262"/>
+  <!-- tank 2 → out (u3) -->
+  <path class="pipe" d="M630 386 H780"/>
+  <path class="flow" d="M630 386 H780"/>
+  <path d="M772 378 L788 386 L772 394 Z" fill="#4fd1ff"/>
+
+  <!-- pump -->
+  <circle cx="58" cy="104" r="20" fill="#14243d" stroke="#7aa7e0" stroke-width="3"/>
+  <g class="pump">
+    <path d="M58 90 L62 104 L58 118 L54 104 Z M44 104 L58 100 L72 104 L58 108 Z" fill="#4fd1ff"/>
+  </g>
+
+  <!-- valves -->
+  <g transform="translate(175 48)">
+    <path class="valve" d="M-11 -9 L11 9 L11 -9 L-11 9 Z"/>
+  </g>
+  <g transform="translate(430 206)">
+    <path class="valve" d="M-11 -9 L11 9 L11 -9 L-11 9 Z"/>
+  </g>
+  <g transform="translate(705 386)">
+    <path class="valve" d="M-11 -9 L11 9 L11 -9 L-11 9 Z"/>
+  </g>
+
+  <!-- ================= tank 1 ================= -->
+  <g clip-path="url(#in1)">
+    <line class="stream" x1="230" y1="80" x2="230" y2="220"/>
+    <g class="lvl1">
+      <g class="slide2"><use href="#wave2"/></g>
+      <g class="slide"><use href="#wave"/></g>
+    </g>
+    <line class="setpt" x1="154" y1="131" x2="306" y2="131"/>
+    <g class="obs"><line class="est" x1="154" y1="0" x2="306" y2="0"/></g>
+  </g>
+  <rect class="tank" x="150" y="70" width="160" height="150" rx="6"/>
+
+  <!-- leak α1 -->
+  <circle class="drip" cx="172" cy="224" r="3" fill="#4fd1ff"/>
+  <circle class="drip b" cx="172" cy="224" r="3" fill="#4fd1ff"/>
+
+  <!-- failed h1 sensor -->
+  <g transform="translate(112 131)">
+    <line x1="0" y1="0" x2="38" y2="0" stroke="#ff5d73" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle r="9" fill="#2a1420" stroke="#ff5d73" stroke-width="2"/>
+    <path d="M-4 -4 L4 4 M4 -4 L-4 4" stroke="#ff5d73" stroke-width="2.2" stroke-linecap="round" class="blink"/>
+  </g>
+
+  <!-- ================= tank 2 ================= -->
+  <g clip-path="url(#in2)">
+    <line class="stream" x1="550" y1="262" x2="550" y2="400"/>
+    <g class="lvl2">
+      <g class="slide2"><use href="#wave2"/></g>
+      <g class="slide"><use href="#wave"/></g>
+    </g>
+    <line class="setpt" x1="474" y1="311" x2="626" y2="311"/>
+  </g>
+  <rect class="tank" x="470" y="250" width="160" height="150" rx="6"/>
+
+  <!-- leak α2 -->
+  <circle class="drip" cx="492" cy="404" r="3" fill="#4fd1ff"/>
+  <circle class="drip b" cx="492" cy="404" r="3" fill="#4fd1ff"/>
+
+  <!-- healthy h2 sensor -->
+  <g transform="translate(668 311)">
+    <line x1="-38" y1="0" x2="0" y2="0" stroke="#7cf29c" stroke-width="2"/>
+    <circle r="9" fill="#13291f" stroke="#7cf29c" stroke-width="2"/>
+    <circle r="3.5" fill="#7cf29c" class="pulse"/>
+  </g>
+
+  </g>
+  </svg>

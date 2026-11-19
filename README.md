@@ -25,7 +25,7 @@ Designed and tested control strategies for an autonomous quadrotor, exploring ho
 State-feedback and observer design for two water tanks in cascade, using Linear Matrix Inequalities. The chosen controller settles about **7× faster** than the open loop while every valve command stays between fully shut and fully open, and an observer rebuilds the level of tank 1 when its sensor fails.
 
 <a href="https://github.com/ViDem02/LMI_PROJECT">
-  <img src="https://raw.githubusercontent.com/ViDem02/LMI_PROJECT/main/assets/tanks.svg" alt="Two-tank cascade — both levels converge to the setpoint while an observer reconstructs the level of tank 1" width="760" />
+  <img src="assets/lmi-tanks.svg" alt="Two-tank cascade — both levels converge to the setpoint while an observer reconstructs the level of tank 1" width="760" />
 </a>
 
 <sub>Convex optimisation · State observers · MATLAB · YALMIP · MOSEK</sub>
@@ -45,11 +45,11 @@ A C++ perception system for driverless racing. It turns LiDAR data into an under
 Explored how industrial processes and energy demand can be modelled and scheduled more efficiently, combining numerical optimisation with simulation and web-based tools.
 
 <a href="https://github.com/ViDem02/CONCAST-optimisation">
-  <img src="https://raw.githubusercontent.com/ViDem02/CONCAST-optimisation/reviewed/docs/sparc-day.svg" alt="CONCAST Optimisation — daily schedule" width="760" />
+  <img src="assets/concast-day.svg" alt="CONCAST Optimisation — daily schedule" width="760" />
 </a>
 
 <a href="https://github.com/ViDem02/concast-dashboard-main">
-  <img src="https://raw.githubusercontent.com/ViDem02/concast-dashboard-main/main/docs/assets/milp-preview.svg" alt="CONCAST dashboard — MILP scheduling preview" width="760" />
+  <img src="assets/concast-milp.svg" alt="CONCAST dashboard — MILP scheduling preview" width="760" />
 </a>
 
 **Repositories:** [CONCAST-optimisation](https://github.com/ViDem02/CONCAST-optimisation) (optimisation and simulation) · [concast-dashboard-main](https://github.com/ViDem02/concast-dashboard-main) (web dashboard)
