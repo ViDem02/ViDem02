@@ -1,14 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="t">
   <title id="t">Victor Gabriele De Matteis</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#397b9b"/>
       <stop offset="1" stop-color="#549ec0"/>
     </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.45"/>
+    </linearGradient>
+    <clipPath id="radar"><circle cx="820" cy="130" r="100"/></clipPath>
   </defs>
-  <rect width="960" height="220" fill="url(#bg)"/>
-  <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="47" font-weight="700" fill="#ffffff">
-    <text x="51" y="106">VICTOR GABRIELE</text>
-    <text x="51" y="153">DE MATTEIS</text>
+
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .step { font-size: 13px; letter-spacing: 1.6px; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes blip { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    @keyframes dash { to { stroke-dashoffset: -24; } }
+    @keyframes lit  { 0%, 28% { fill-opacity: 0.28; } 34%, 100% { fill-opacity: 0; } }
+
+    .sweep { transform-origin: 820px 130px; animation: spin 5s linear infinite; }
+    .b1 { animation: blip 2.5s ease-in-out infinite; }
+    .b2 { animation: blip 2.5s ease-in-out 0.8s infinite; }
+    .b3 { animation: blip 2.5s ease-in-out 1.6s infinite; }
+    .flow { animation: dash 1s linear infinite; }
+    .lit { fill: #ffffff; fill-opacity: 0; animation: lit 3.6s linear infinite; }
+    .l2 { animation-delay: 1.2s; }
+    .l3 { animation-delay: 2.4s; }
+  </style>
+
+  <rect width="960" height="260" fill="url(#bg)"/>
+
+  <!-- name -->
+  <text x="51" y="96" font-size="47">VICTOR GABRIELE</text>
+  <text x="51" y="143" font-size="47">DE MATTEIS</text>
+
+  <!-- study → implement → verify -->
+  <g transform="translate(0,180)">
+    <path d="M147 17 H195 M331 17 H379" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="6 6" class="flow"/>
+    <path d="M189 11 L196 17 L189 23 M373 11 L380 17 L373 23" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+    <rect x="51" width="96" height="34" class="lit"/>
+    <rect x="51" width="96" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+    <text x="99" y="22" text-anchor="middle" class="step">STUDY</text>
+
+    <rect x="199" width="132" height="34" class="lit l2"/>
+    <rect x="199" width="132" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+    <text x="265" y="22" text-anchor="middle" class="step">IMPLEMENT</text>
+
+    <rect x="383" width="104" height="34" class="lit l3"/>
+    <rect x="383" width="104" height="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+    <text x="435" y="22" text-anchor="middle" class="step">VERIFY</text>
   </g>
+
+  <!-- LiDAR radar -->
+  <circle cx="820" cy="130" r="100" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
+  <g clip-path="url(#radar)">
+    <circle cx="820" cy="130" r="66" fill="none" stroke="#ffffff" stroke-opacity="0.25"/>
+    <circle cx="820" cy="130" r="33" fill="none" stroke="#ffffff" stroke-opacity="0.25"/>
+    <path d="M720 130 H920 M820 30 V230" stroke="#ffffff" stroke-opacity="0.15"/>
+    <g class="sweep">
+      <path d="M820 130 L920 130 A100 100 0 0 0 890.7 59.3 Z" fill="url(#sweep)"/>
+      <path d="M820 130 L920 130" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9"/>
+    </g>
+    <!-- point cloud -->
+    <g fill="#ffffff" fill-opacity="0.5">
+      <circle cx="752.3" cy="97.8" r="1.4"/><circle cx="758.7" cy="157.4" r="1.4"/><circle cx="773.3" cy="67.1" r="1.4"/>
+      <circle cx="884.5" cy="170.3" r="1.4"/><circle cx="902.2" cy="118.7" r="1.4"/><circle cx="779.7" cy="196.1" r="1.4"/>
+      <circle cx="874.8" cy="196.1" r="1.4"/><circle cx="744.2" cy="138.1" r="1.4"/><circle cx="908.7" cy="152.6" r="1.4"/>
+      <circle cx="787.8" cy="44.6" r="1.4"/><circle cx="763.6" cy="183.2" r="1.4"/>
+    </g>
+    <!-- track cones: yellow left, blue right -->
+    <g fill="#ffd84d">
+      <circle cx="789.4" cy="207.4" r="3.6"/><circle cx="791.0" cy="175.1" r="3.6" class="b1"/><circle cx="795.8" cy="142.9" r="3.6"/>
+      <circle cx="805.5" cy="110.7" r="3.6" class="b2"/><circle cx="820" cy="80" r="3.6"/><circle cx="837.7" cy="54.2" r="3.6" class="b3"/>
+    </g>
+    <g fill="#0d2f47">
+      <circle cx="852.2" cy="207.4" r="3.6" class="b2"/><circle cx="850.6" cy="175.1" r="3.6"/><circle cx="853.9" cy="144.5" r="3.6" class="b3"/>
+      <circle cx="861.9" cy="115.5" r="3.6"/><circle cx="874.8" cy="89.7" r="3.6" class="b1"/><circle cx="892.5" cy="67.1" r="3.6"/>
+    </g>
+    <!-- planned path -->
+    <path d="M820.8 138.1 C 821.6 105.9, 834.5 83.3, 865.1 57.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 6" class="flow"/>
+  </g>
+  <!-- car -->
+  <path d="M820.8 120.6 L828.1 141.6 L820.8 137.6 L813.6 141.6 Z" fill="#ffffff"/>
 </svg>
